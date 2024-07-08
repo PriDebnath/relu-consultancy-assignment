@@ -1,27 +1,15 @@
-# ReluConsultancyAssignment
+### Relu Consultancy Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+#### Application screenshots
+<a href="https://quote-keeper-2.netlify.app/all-quote-list">
+<img src = "src/assets/images/app-screenshot-1.png" />
+</a>
+<a href="https://quote-keeper-2.netlify.app/all-quote-list">
+<img src = "src/assets/images/app-screenshot-2.png" />
+</a>
 
-## Development server
+#### Assignment design url 
+https://bpued.r.sp1-brevo.net/mk/cl/f/sh/1t6Af4OiGsDg0dq0TF05s1W1ubuAwo/Vo0_TLEBz-L8
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Assignment design 
