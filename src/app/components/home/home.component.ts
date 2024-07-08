@@ -52,6 +52,20 @@ export class HomeComponent {
     },
   ];
 
+  arts = [
+    {
+      artSrc: '../../../assets/images/art-1.png',
+    },
+    {
+      artSrc: '../../../assets/images/art-2.png',
+    },
+    {
+      artSrc: '../../../assets/images/art-3.png',
+    },
+    {
+      artSrc: '../../../assets/images/art-4.png',
+    },
+  ];
   constructor() {}
 
   handleCurrentSidebarLink(link: string) {
