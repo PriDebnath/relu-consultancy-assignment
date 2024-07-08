@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  sidebarLinks: string[] = ['Home'];
   postSrc: string[] = ['../../../assets/images/post-1.png'];
+  currentSidebarLink: string = 'home';
+  constructor() {}
+  handleCurrentSidebarLink(link: string) {
+    this.currentSidebarLink = link;
+  }
 }

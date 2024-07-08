@@ -4,7 +4,8 @@
 }
 
 .sidebar {
-  background-color: red;
+  /* background-color: red; */
+  background-color: var(--brandBg);
 }
 
 .content {
@@ -43,15 +44,12 @@
 }
 
 .header {
-  padding: 10px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 0.5rem;
   background: white;
-  height: 3vh;
+  height: 4rem;
 }
 
 .header img {
@@ -69,18 +67,10 @@
   flex: 1;
 }
 
-.sidebar a,
-.rightbar a {
-  text-decoration: none;
-  color: #000;
-  display: block;
-  padding: 10px;
-}
-
 .sidebar a:hover,
 .rightbar a:hover {
   font-weight: 600;
-  border-left: 2px solid green;
+  border-left: 3px solid var(--brandGreenColor);
 }
 
 /* left sidebar*/
@@ -102,10 +92,40 @@ nav a {
   align-items: center;
   line-height: normal;
   border-left: 2px solid transparent;
+  color: var(--secondaryTextColor);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  margin: 0.2rem 0rem;
+}
+
+nav a svg {
+  /* opacity: 0.5; */
+  fill: var(--secondaryTextColor);
+}
+
+.sidebar a:hover svg {
+  /* opacity: 1; */
+  fill: var(--primaryTextColor) !important;
+  stroke: var(--primaryTextColor) !important;
+}
+
+.active-sidebar-link {
+  font-weight: 600;
+  border-left: 3px solid var(--brandGreenColor) !important;
+}
+
+.active-sidebar-link svg {
+  fill: var(--primaryTextColor) !important;
+}
+
+.nav-text {
+  padding: 0 1rem;
 }
 
 .log-out {
-  margin-top: auto;
+  margin-top: auto !important;
 }
 
 .nav-footer {
