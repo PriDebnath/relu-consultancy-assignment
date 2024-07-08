@@ -13,3 +13,6 @@ https://bpued.r.sp1-brevo.net/mk/cl/f/sh/1t6Af4OiGsDg0dq0TF05s1W1ubuAwo/Vo0_TLEB
 
 
 #### Assignment design 
+<a href="https://quote-keeper-2.netlify.app/all-quote-list">
+<img src = "src/assets/images/design-screenshot-1.jpg" />
+</a>
