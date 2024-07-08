@@ -269,19 +269,67 @@
     </div>
   </div>
   <div class="content">
+    <!-- filter start -->
     <div
       class="header"
       style="display: flex; align-items: center; padding: 10px"
     >
       <span>
         <svg
-          id="home-icon"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="16"
-          height="16"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
         >
-          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+          <g
+            id="Component_32"
+            data-name="Component 32"
+            transform="translate(0.14 0.14)"
+          >
+            <rect
+              id="Rectangle_1829"
+              data-name="Rectangle 1829"
+              width="20"
+              height="20"
+              transform="translate(-0.14 -0.14)"
+              fill="none"
+            />
+            <g
+              id="Group_2545"
+              data-name="Group 2545"
+              transform="translate(3.147 4.107)"
+            >
+              <g
+                id="Path_1315"
+                data-name="Path 1315"
+                transform="translate(0 0)"
+              >
+                <path
+                  id="Path_14"
+                  data-name="Path 14"
+                  d="M5.662,0A5.625,5.625,0,1,1,0,5.624,5.644,5.644,0,0,1,5.662,0Z"
+                  transform="translate(0 0)"
+                  fill="none"
+                />
+                <path
+                  id="Path_15"
+                  data-name="Path 15"
+                  d="M5.663,1.187a4.438,4.438,0,1,0,4.468,4.438A4.458,4.458,0,0,0,5.663,1.187M5.663,0A5.625,5.625,0,1,1,0,5.625,5.644,5.644,0,0,1,5.663,0Z"
+                  transform="translate(0 0)"
+                  fill="#303030"
+                />
+              </g>
+              <path
+                id="Path_1188"
+                data-name="Path 1188"
+                d="M-1895.42-1888l3.006,3.036"
+                transform="translate(1905.148 1897)"
+                fill="none"
+                stroke="#303030"
+                stroke-width="1.5"
+              />
+            </g>
+          </g>
         </svg>
       </span>
 
@@ -290,171 +338,244 @@
         placeholder="Search here..."
         style="flex-grow: 1; padding: 8px; border-radius: 4px"
       />
-      <button
+      <div
         style="
           margin-left: 10px;
           padding: 8px 12px;
           border: none;
-          background-color: #e5e7eb;
           border-radius: 4px;
           cursor: pointer;
         "
       >
         <span>
           <svg
+            id="Component_39_2_"
+            data-name="Component 39 (2)"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="16"
-            height="16"
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
           >
-            <path
-              d="M3 18v-2h2v2H3zm6 0v-2h2v2H9zm6 0v-2h2v2h-2zm6 0v-2h2v2h-2zM3 13v-2h2v2H3zm6 0v-2h2v2H9zm6 0v-2h2v2h-2zm6 0v-2h2v2h-2zM3 8V6h2v2H3zm6 0V6h2v2H9zm6 0V6h2v2h-2zm6 0V6h2v2h-2z"
+            <rect
+              id="Rectangle_1829"
+              data-name="Rectangle 1829"
+              width="26"
+              height="26"
+              fill="none"
             />
+            <g id="Group_26" data-name="Group 26">
+              <line
+                id="Line_5"
+                data-name="Line 5"
+                x2="15"
+                transform="translate(5.5 6.5)"
+                fill="none"
+                stroke="#303030"
+                stroke-width="1.5"
+              />
+              <line
+                id="Line_6"
+                data-name="Line 6"
+                x2="15"
+                transform="translate(5.5 12.5)"
+                fill="none"
+                stroke="#303030"
+                stroke-width="1.5"
+              />
+              <line
+                id="Line_7"
+                data-name="Line 7"
+                x2="15"
+                transform="translate(5.5 18.5)"
+                fill="none"
+                stroke="#303030"
+                stroke-width="1.5"
+              />
+              <g
+                id="Ellipse_4"
+                data-name="Ellipse 4"
+                transform="translate(7 4)"
+                fill="#fbfbfb"
+                stroke="#303030"
+                stroke-width="1"
+              >
+                <circle cx="2.5" cy="2.5" r="2.5" stroke="none" />
+                <circle cx="2.5" cy="2.5" r="2" fill="none" />
+              </g>
+              <g
+                id="Ellipse_5"
+                data-name="Ellipse 5"
+                transform="translate(14 10)"
+                fill="#fbfbfb"
+                stroke="#303030"
+                stroke-width="1"
+              >
+                <circle cx="2.5" cy="2.5" r="2.5" stroke="none" />
+                <circle cx="2.5" cy="2.5" r="2" fill="none" />
+              </g>
+              <g
+                id="Ellipse_6"
+                data-name="Ellipse 6"
+                transform="translate(8 16)"
+                fill="#fbfbfb"
+                stroke="#303030"
+                stroke-width="1"
+              >
+                <circle cx="2.5" cy="2.5" r="2.5" stroke="none" />
+                <circle cx="2.5" cy="2.5" r="2" fill="none" />
+              </g>
+            </g>
           </svg>
         </span>
-        <span> Filter</span>
-      </button>
+        <span> Filters</span>
+      </div>
     </div>
-
-    <div class="post">
-      <div class="profile">
-        <div class="profile-left">
+    <!-- filter end -->
+    <div style="padding: 1.5rem 0; overflow: auto; height: 90vh">
+      <div class="post" *ngFor="let post of posts">
+        <div class="profile">
+          <div class="profile-left">
+            <div>
+              <img
+                class="profile-img"
+                [src]="post.personSrc"
+                alt="Post Image"
+              />
+            </div>
+            <div class="profile-text">
+              <h3 class="profile font-size-20px font-weight-400">
+                {{ post.personName }}
+              </h3>
+              <h5 class="profile font-size-14px font-weight-400">
+                {{ post.personUserName }}
+              </h5>
+            </div>
+          </div>
           <div>
-            <img
-              class="profile-img"
-              src="https://via.placeholder.com/40x40.png?text=Image+Not+Found"
-              alt="Post Image"
-            />
-          </div>
-          <div class="profile-text">
-            <h3 class="profile">Lara Leones</h3>
-            <h5 class="profile">
-              {{ "@thewallart" }}
-            </h5>
+            <!-- More Options Icon -->
+            <svg
+              id="more-options-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+            >
+              <path
+                d="M12 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
           </div>
         </div>
-        <div>
-          <!-- More Options Icon -->
-          <svg
-            id="more-options-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="16"
-            height="16"
+        <p class="font-size-14px font-weight-400 py-2">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+          <a
+            href="#"
+            class="brandPinkColor font-weight-400"
+            style="text-decoration: none"
+            >Read More</a
           >
-            <path
-              d="M12 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-            />
-          </svg>
+        </p>
+        <img class="post-img" [src]="post.postSrc" alt="Post Image" />
+        <div class="actions">
+          <div class="d-flex align-items-center">
+            <span>
+              <!-- Like Icon -->
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23.52"
+                height="21.768"
+                viewBox="0 0 23.52 21.768"
+              >
+                <path
+                  id="heart"
+                  d="M23.363,5.427a7.172,7.172,0,0,0-9.6-.785A7.162,7.162,0,0,0,3.774,5.8a7.939,7.939,0,0,0,.393,10.479l7.3,7.633a3.174,3.174,0,0,0,4.587,0l7.3-7.633A7.933,7.933,0,0,0,23.363,5.427ZM21.7,14.582,14.4,22.2a.868.868,0,0,1-1.27,0l-7.3-7.658a5.429,5.429,0,0,1,0-7.363,4.876,4.876,0,0,1,7.058,0,1.142,1.142,0,0,0,1.67,0,4.876,4.876,0,0,1,7.058,0,5.429,5.429,0,0,1,.094,7.363Z"
+                  transform="translate(-1.988 -3.121)"
+                  fill="#101010"
+                />
+              </svg>
+            </span>
+            <span class="px-2 font-size-20px font-weight-400">9.8k</span>
+          </div>
+          <div class="d-flex align-items-center py-2">
+            <span>
+              <!-- Comment Icon -->
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22.024"
+                height="22.018"
+                viewBox="0 0 22.024 22.018"
+              >
+                <path
+                  id="comment"
+                  d="M25.564,20.848a10.889,10.889,0,1,0-4.716,4.718l4.69,1.172a.989.989,0,0,0,1.2-1.2Zm-2.012.109.865,3.461-3.461-.866a1,1,0,0,0-.723.1,8.915,8.915,0,1,1,3.417-3.417A.984.984,0,0,0,23.553,20.957Z"
+                  transform="translate(-4.875 -4.875)"
+                  fill="#101010"
+                  stroke="#101010"
+                  stroke-width="0.25"
+                />
+              </svg>
+            </span>
+            <span class="px-2 font-size-20px font-weight-400">8.6k</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <span>
+              <!-- Share Icon -->
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="18"
+                viewBox="0 0 20 18"
+              >
+                <path
+                  id="share"
+                  d="M21.707,11.293l-8-8A1,1,0,0,0,12,4V7.545A11.015,11.015,0,0,0,2,18.5V20a1,1,0,0,0,1.784.621,11.456,11.456,0,0,1,7.887-4.049c.05-.006.175-.016.329-.026V20a1,1,0,0,0,1.707.707l8-8a1,1,0,0,0,0-1.414ZM14,17.586V15.5a1,1,0,0,0-1-1c-.255,0-1.3.049-1.562.085a14.005,14.005,0,0,0-7.387,2.948A9.013,9.013,0,0,1,13,9.5a1,1,0,0,0,1-1V6.414L19.586,12Z"
+                  transform="translate(-2 -3)"
+                />
+              </svg>
+            </span>
+            <span class="px-2 font-size-20px font-weight-400">7.2k</span>
+          </div>
         </div>
       </div>
-      <p>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
-        <a href="#">Read More</a>
-      </p>
-      <img class="post-img" [src]="postSrc[0]" alt="Post Image" />
-      <div class="actions">
-        <div>
-          <span>
-            <!-- Like Icon -->
-            <svg
-              id="like-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="16"
-              height="16"
-            >
-              <path
-                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-              />
-            </svg>
-          </span>
-          <span>9.8k</span>
-        </div>
-        <div>
-          <span>
-            <!-- Like Icon -->
-            <!-- Comment Icon -->
-            <svg
-              id="comment-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="16"
-              height="16"
-            >
-              <path
-                d="M21 6h-2V4c0-1.1-.9-2-2-2H7C5.9 2 5 2.9 5 4v2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-9 12H8v-2h4v2zm6-4H8v-2h10v2zm0-4H8V8h10v2z"
-              />
-            </svg>
-          </span>
-          <span>8.6k</span>
-        </div>
-        <div>
-          <span>
-            <!-- Share Icon -->
-            <svg
-              id="share-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="16"
-              height="16"
-            >
-              <path
-                d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 13.7a2.5 2.5 0 000-3.39L16.04 7.2c.52.5 1.2.79 1.96.79 1.61 0 2.9-1.3 2.9-2.92C21.9 3.3 20.61 2 19 2s-2.9 1.3-2.9 2.92c0 .52.14 1.02.39 1.46L8.32 9.71a2.92 2.92 0 00-1.96-.79 2.9 2.9 0 100 5.84c.76 0 1.44-.3 1.96-.77l7.13 4.24a2.92 2.92 0 00-.39 1.46c0 1.62 1.3 2.92 2.9 2.92s2.9-1.3 2.9-2.92-1.29-2.92-2.9-2.92z"
-              />
-            </svg>
-          </span>
-          <span>7.2k</span>
-        </div>
-      </div>
-    </div>
-    <div class="post">
-      <h3>Thomas J.</h3>
-      <p>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
-      </p>
-      <img
-        src="https://via.placeholder.com/500x300.png?text=Image+Not+Found"
-        alt="Post Image"
-      />
     </div>
   </div>
   <div class="rightbar">
-    <div class="header">Become a Seller</div>
-    <div class="d-flex">
-      <div>Artists</div>
-      <div>Photographers</div>
+    <div
+      class="header brandGreenBgColor d-flex align-items-center justify-content-center"
+    >
+      Become a Seller
     </div>
-    <nav>
-      <div
-        class="rightbar-img-card"
-        style="
-          background: url(https://via.placeholder.com/300x100.png?text=Thomas+Edward);
-        "
-      ></div>
-      <img
-        src="https://via.placeholder.com/200x100.png?text=Thomas+Edward"
-        alt="Thomas Edward"
-      />
-      <img
-        src="https://via.placeholder.com/200x100.png?text=Chris+Doe"
-        alt="Chris Doe"
-      />
-      <img
-        src="https://via.placeholder.com/200x100.png?text=Emile+Jones"
-        alt="Emile Jones"
-      />
-      <img
-        src="https://via.placeholder.com/200x100.png?text=Jessica+Williams"
-        alt="Jessica Williams"
-      />
-    </nav>
-    <div class="d-flex">
-      <a href="#">Privacy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Cookie Notice</a>
+    <div class="d-flex py-4">
+      <div class="primaryTextColor">Artists</div>
+      <div class="secondaryTextColor px-2">Photographers</div>
+    </div>
+    <div class="artist-post">
+      <div *ngFor="let artist of artists" style="padding: 0 4px">
+        <div class="artist">
+          <div>
+            <img [src]="artist.postSrc" />
+          </div>
+          <div class="artist-detail">
+            <div class="artist-img-div">
+              <img class="" [src]="artist.personSrc" alt="" />
+              <div class="artist-status"></div>
+            </div>
+            <div class="px-2">
+              <div class="font-weight-600">{{ artist.personName }}</div>
+              <div class="font-size-12px">{{ artist.personUserName }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-between py-3">
+      <p href="#" class="font-size-10px secondaryTextColor">Privacy</p>
+      <p href="#" class="font-size-10px secondaryTextColor">Terms of Service</p>
+      <p href="#" class="font-size-10px secondaryTextColor">Cookie Notice</p>
     </div>
   </div>
 </div>
