@@ -3,6 +3,7 @@
   --primaryTextColor: #101010;
   --secondaryTextColor: #8d8d8d;
   --brandGreenColor: #88c2bb;
+  --brandPinkColor: #ff5e8a;
   --brandBg: #f5f5f5;
 }
 
@@ -20,18 +21,70 @@ body {
   background-color: #f5f5f5;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: transparent !important;
+  margin-left: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(16, 16, 16, 0.08) !important;
+  margin-left: 2px;
+}
+
 .font-size-10px {
   font-size: 10px !important;
+}
+
+.font-size-12px {
+  font-size: 12px !important;
+}
+
+.font-size-14px {
+  font-size: 14px !important;
+}
+
+.font-size-20px {
+  font-size: 20px !important;
 }
 
 .font-size-32px {
   font-size: 32px !important;
 }
 
+.font-weight-400 {
+  font-weight: 400 !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
 .secondaryTextColor {
-  color: var(--secondaryTextColor);
+  color: var(--secondaryTextColor) !important;
 }
 
 .primaryTextColor {
-  color: var(--primaryTextColor);
+  color: var(--primaryTextColor) !important;
+}
+
+.brandGreenColor {
+  color: var(--brandGreenColor) !important;
+}
+
+.brandPinkColor {
+  color: var(--brandPinkColor) !important;
+}
+
+.brandGreenBgColor {
+  background-color: var(--brandGreenColor) !important;
 }
