@@ -1,5 +1,6 @@
 [build.environment]
   NPM_FLAGS = "--legacy-peer-deps"
+  CI = "false"
   
 [build]
   # Directory where your Angular app is located after building
