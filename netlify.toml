@@ -8,7 +8,7 @@
  
 
   # Publish directory for Netlify
-  publish = "dist/relu-consultancy-assignment"
+  publish = "dist/relu-consultancy-assignment/browser"
   
   [[redirects]]
   from = "/*"
