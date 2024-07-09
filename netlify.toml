@@ -4,13 +4,13 @@
 [build]
   # Directory where your Angular app is located after building
   base = "/"
-  publish = "/build"
+  #publish = "/build"
 
-  # Pre-build command to install dependencies with legacy peer deps
+  # build command 
   command = "ng build"
 
   # Publish directory for Netlify
-  #publish = "/dist/relu-consultancy-assignment/"
+  publish = "dist/relu-consultancy-assignment"
 
 [[redirects]]
   from = "/*"
