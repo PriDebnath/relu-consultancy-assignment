@@ -10,7 +10,7 @@
   command = "ng build"
 
   # Publish directory for Netlify
-  publish = "/dist/relu-consultancy-assignment/"
+  #publish = "/dist/relu-consultancy-assignment/"
 
 [[redirects]]
   from = "/*"
