@@ -1,5 +1,8 @@
 ### Relu Consultancy Assignment
 
+#### Application live url
+https://relu-consultancy-assignment-by-pri.netlify.app/
+
 #### Application screenshots
 
 <a href="https://quote-keeper-2.netlify.app/all-quote-list">
