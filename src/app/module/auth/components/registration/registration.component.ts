@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/module/auth/services/auth/auth.service';
 import { LocalStorageService } from 'src/app/module/auth/services/localStorage/local-storage.service';
+import { AuthFirebaseService } from '../../services/auth-firebase/auth-firebase.service';
 
 @Component({
   selector: 'app-registration',
@@ -17,7 +18,7 @@ export class RegistrationComponent implements OnInit {
   constructor(
     private router: Router,
     private fb: FormBuilder,
-    private authService: AuthService,
+    private authFirebaseService: AuthFirebaseService,
     private localStorageService: LocalStorageService
   ) {}
 
@@ -40,13 +41,18 @@ export class RegistrationComponent implements OnInit {
 
   register() {
     this.registering = true;
-    this.authService.register(this.registrationForm.value).subscribe(
+    let email = this.registrationForm.get('email')?.value;
+    let password = this.registrationForm.get('password')?.value;
+
+    this.authFirebaseService.register(email, password).subscribe(
       (response) => {
+        console.log({ response });
         this.router.navigateByUrl('/auth/login');
         this.registering = false;
       },
       (error) => {
         this.registering = false;
+        console.log({ error });
         console.error('RegistrationForm error', error);
       }
     );

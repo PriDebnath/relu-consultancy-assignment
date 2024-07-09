@@ -12,7 +12,7 @@ import { HomeComponent } from './components/home/home.component';
   declarations: [AppComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, AuthModule, HttpClientModule],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: JwtTokenInterceptor, multi: true }, // Register your interceptor
+    // { provide: HTTP_INTERCEPTORS, useClass: JwtTokenInterceptor, multi: true }, // Register your interceptor
   ],
   bootstrap: [AppComponent],
 })
