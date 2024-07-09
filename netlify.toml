@@ -1,12 +1,12 @@
 [build]
   # Directory where your Angular app is located after building
-  base = "frontend"
+  base = "/"
 
   # Pre-build command to install dependencies with legacy peer deps
   command = "npm install --legacy-peer-deps && ng build"
 
   # Publish directory for Netlify
-  publish = "dist/quotes_keeper_2"
+  publish = "dist/relu-consultancy-assignment"
 
 [[redirects]]
   from = "/*"
