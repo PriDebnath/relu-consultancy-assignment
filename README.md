@@ -21,3 +21,16 @@ https://bpued.r.sp1-brevo.net/mk/cl/f/sh/1t6Af4OiGsDg0dq0TF05s1W1ubuAwo/Vo0_TLEB
 <a href="https://quote-keeper-2.netlify.app/all-quote-list">
 <img src = "src/assets/images/design-screenshot-2.png" />
 </a>
+
+
+#### Run development
+
+##### Install all packages required for the application
+```
+  npm install --legacy-peer-deps
+```
+##### Start development server
+```
+  ng serve
+```
+
