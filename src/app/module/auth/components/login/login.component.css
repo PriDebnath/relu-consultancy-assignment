@@ -1,8 +1,7 @@
-
-.form-container{
+.form-container {
   padding: 1rem;
-margin: 1rem;
-border-radius: 0.7rem;
-
-background: #90e0e5;
+  margin: 1rem;
+  border-radius: 0.7rem;
+  background: var(--brandBg);
+  border: 2px solid var(--brandGreenColor);
 }
